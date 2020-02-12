@@ -91,4 +91,25 @@ int main()
 
 
 
-
+#include <iostream>
+using namespace std;
+int main()
+{
+	double n;
+	int summ_n = 0;
+	cout << "enter number";
+	cin >> n;
+	if ((n - int(n)) != 0)
+	{
+		cout << "n is wrong";
+	}
+	else
+	{
+		for (int i = 1; i < n + 1; i++)
+		{
+			summ_n += i;
+		}
+		cout << "summ_n=" << summ_n << endl;
+		return 0;
+	}
+}
